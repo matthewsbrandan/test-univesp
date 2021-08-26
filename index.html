@@ -5,9 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Univesp</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <style>
     body, h1, h2, h3, h4, h5, h6, button, select, input{
       font-family: 'Roboto', sans-serif;
@@ -72,14 +77,23 @@
     article p{
       margin: .3rem 0 0;
     }
-
   </style>
+  <script>
+    function search(){
+      $('article').hide();
+      $('article:contains(' + $('#search').val() +')').show();
+    }
+    function clearField(){
+      $('#search').val('');
+      search();
+    }
+  </script>
 </head>
 <body>
   <img src="images/logo.png"/>
-  <input class="white" type="text" placeholder="Pesquisar..."/>
-  <button>PESQUISAR</button>
-  <button class="white">Limpar</button>
+  <input class="white" type="text" id="search" placeholder="Pesquisar..."/>
+  <button type="button" onclick="search()">PESQUISAR</button>
+  <button type="button" class="white" onclick="clearField()">Limpar</button>
   <div id="content-articles">
     <article>
       <h2>Daniel</h2>
