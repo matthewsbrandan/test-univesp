@@ -1,0 +1,63 @@
+body, h1, h2, h3, h4, h5, h6, button, select, input{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRax4_8-ZT4IThLg0v1hBFsod1CbG-FcquFlA&usqp=CAU');
+  color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  min-height: 100vh;
+}
+h1{
+  margin-bottom: .4rem;
+}
+input{
+  margin-top: 1rem;
+  width: 25rem;
+  height: 3rem;
+  padding: 0 1.2rem;
+  border: 1px solid #99a;
+  border-radius: 99rem;
+  color: #ccd;
+  outline: none;
+  background: transparent;
+}
+button{
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 99rem;
+  outline: none;
+  border: 0;
+  background: #222;
+  color: #ccd;
+  font-weight: bold;
+}
+.white{
+  background:#fff;
+  color:#222;
+}
+#content-articles{
+  width: calc(100% - 4rem);
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+article{
+  background: #ffff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+}
+article p{
+  margin: .3rem 0 0;
+}
