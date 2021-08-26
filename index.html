@@ -54,6 +54,25 @@
       background:#fff;
       color:#222;
     }
+    #content-articles{
+      width: calc(100% - 4rem);
+      margin: 1rem 0;
+      padding: 1rem 2rem;
+      
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    article{
+      background: #ffff;
+      color: #333;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    article p{
+      margin: .3rem 0 0;
+    }
+
   </style>
 </head>
 <body>
@@ -61,12 +80,15 @@
   <input class="white" type="text" placeholder="Pesquisar..."/>
   <button>PESQUISAR</button>
   <button class="white">Limpar</button>
-  <div>
- <article>
-   <h2>Daniel
-   </h2>
-   <p>Teste VS Code</p>
- </article>
+  <div id="content-articles">
+    <article>
+      <h2>Daniel</h2>
+      <p>Teste VS Code</p>
+    </article>
+    <article>
+      <h2>Mateus</h2>
+      <p>Teste VS Code</p>
+    </article>
   </div>
 </body>
 </html>
